@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
-           fetch=".." />
-  <default revision="refs/tags/android-7.0.0_r6"
+      <remote name="mirror"
+          alias="aosp"
+          fetch="file:///mnt/nas2/aosp-mirror" />
+
+      <remote name="github"
+          fetch="https://github.com/" />
+
+      <default revision="refs/tags/android-7.0.0_r6"
            remote="aosp"
            sync-j="4" />
 
